@@ -18,9 +18,36 @@ class HomePage extends StatelessWidget {
         title: Text("Awesome App"),
       ),
       body: Container(
-        child: Text("Hi Flutter"),
+        height: 100,
+        color: Colors.teal,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(8),
+              width: 100,
+              height: 100,
+              color: Colors.red,
+              alignment: Alignment.center,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              width: 100,
+              height: 100,
+              color: Colors.yellow,
+              alignment: Alignment.center,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              width: 100,
+              height: 100,
+              color: Colors.green,
+              alignment: Alignment.center,
+            ),
+          ],
+        ),
       ),
     );
   }
 }
- 

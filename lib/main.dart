@@ -1,5 +1,6 @@
 import 'package:awesome_app/pages/home_page.dart';
 import 'package:awesome_app/pages/home_page_with_fb.dart';
+import 'package:awesome_app/pages/home_page_with_sb.dart';
 import 'package:awesome_app/pages/login_page.dart';
 import 'package:awesome_app/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Constants.prefs.getBool("loggedIn") == true
-          ? HomePageFB()
+          ? HomePageSB()
           : LoginPage(),
       theme: ThemeData(
         primarySwatch: Colors.purple,
